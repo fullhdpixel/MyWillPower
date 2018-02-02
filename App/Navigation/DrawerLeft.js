@@ -1,6 +1,6 @@
 //Default libraries
 import React, { Component } from "react";
-import { Alert, View, Image, TouchableOpacity } from "react-native";
+import { View, Image, TouchableOpacity } from "react-native";
 import { goPage } from "app/Navigation/screens";
 //Theme Definitions
 import { Images } from "app/Themes";
@@ -81,33 +81,34 @@ export default class DrawerLeft extends Component {
               <Text style={styles.userhandle}>@jwilson</Text>
             </Body>
           </CardItem>
-        {/* User profile stats */}
-        <CardItem style={[stylesCommon.shadow, styles.userStats]}>
-          <Body style={stylesCommon.horizontal}>
-            <Text style={[styles.userStatsText, stylesCommon.fontBold]}>
-              177
+          {/* User profile stats */}
+          <CardItem style={[stylesCommon.shadow, styles.userStats]}>
+            <Body style={stylesCommon.horizontal}>
+              <Text style={[styles.userStatsText, stylesCommon.fontBold]}>
+                177
             </Text>
-            <Text note style={styles.statsexplanation}>
-              Following
+              <Text note style={styles.statsexplanation}>
+                Following
             </Text>
-            <Text style={[styles.userStatsText, stylesCommon.fontBold]}>
-              488
+              <Text style={[styles.userStatsText, stylesCommon.fontBold]}>
+                488
             </Text>
-            <Text note style={styles.statsexplanation}>
-              Followers
+              <Text note style={styles.statsexplanation}>
+                Followers
             </Text>
-          </Body>
-        </CardItem>
+            </Body>
+          </CardItem>
         </TouchableOpacity>
         <Content>
           {/* Navigation */}
           <List style={[styles.drawerList]}>
-            
+
             <ListItem
               icon
-              onPress={() =>
+              onPress={() => {
+                this.setState({ activeScreen: "LotteryScreen" });
                 goPage(rootNavigator, "LotteryScreen", true, "fade", false, true)
-              }
+              }}
               style={[styles.drawerItem, this.getActiveStyle("LotteryScreen")]}
             >
               <Left>
@@ -122,9 +123,10 @@ export default class DrawerLeft extends Component {
             <ListItem
               icon
               button
-              onPress={() =>
+              onPress={() => {
+                this.setState({ activeScreen: "GainsScreen" });
                 goPage(rootNavigator, "GainsScreen", true, "fade", false, true)
-              }
+              }}
               style={[styles.drawerItem, this.getActiveStyle("GainsScreen")]}
             >
               <Left>

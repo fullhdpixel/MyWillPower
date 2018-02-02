@@ -3,12 +3,7 @@ import DebugConfig from "../Config/DebugConfig";
 import React from "react";
 import { View } from "react-native";
 
-// import RootContainer from "./RootContainer";
-import {
-  registerScreens,
-  registerScreenVisibilityListener
-} from "../Navigation/AppNavigation";
-import { Navigation, ScreenVisibilityListener } from "react-native-navigation";
+import { Navigation } from "react-native-navigation";
 
 /**
  * Provides an entry point into our application.  Both index.ios.js and index.android.js
@@ -16,8 +11,6 @@ import { Navigation, ScreenVisibilityListener } from "react-native-navigation";
  *
  * We separate like this to play nice with React Native's hot reloading.
  */
-
-Navigation.registerComponent("LoginScreen", () => LoginScreen);
 
 class App extends React.Component {
   constructor(props) {
