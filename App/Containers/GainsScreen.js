@@ -34,9 +34,6 @@ import {
   saveActiveScreen
 } from "app/Navigation/screens";
 
-import MapView from 'react-native-maps';
-// "AIzaSyC9MCWjXneXxuHTaydkxhYhIEi7Ry3XWrs"
-
 export default class GainsScreen extends Component {
   constructor(props) {
     super(props);
@@ -56,13 +53,14 @@ export default class GainsScreen extends Component {
               <Icon style={stylesCommon.primary} name="menu" />
             </Button>
           </Left>
-          <Body>
+          <Body style={stylesCommon.body}>
             <Title>Extra Gains</Title>
           </Body>
           <Right/>
         </Header>
-        <Content padderstyle={styles.content}>
-          
+        <Content padder style={styles.content}>
+          <Text>Expected Increase in Life: 20h</Text>
+          <Text>Percentage among peers: TOP 20 %</Text>
         </Content>
       </Container>
     );

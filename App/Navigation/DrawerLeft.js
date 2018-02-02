@@ -67,8 +67,6 @@ export default class DrawerLeft extends Component {
           <CardItem style={styles.userInfoContainer}>
             <Left style={styles.userThumbnailView}>
               <Thumbnail source={Images.user7} />
-              <Badge style={[styles.userBadge, stylesCommon.shadow]} />
-              <Text style={styles.userBadgeText}>3</Text>
             </Left>
             <Body style={styles.userInfoView}>
               <View style={stylesCommon.horizontal}>

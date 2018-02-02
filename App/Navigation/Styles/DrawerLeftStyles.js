@@ -81,28 +81,6 @@ export default StyleSheet.create({
     //Set active styles for listItem here
     backgroundColor: "rgba(0,0,0,0.045)"
   },
-  userBadge: {
-    top: 0,
-    left: -20,
-    width: 25,
-    height: 25,
-    borderRadius: 25 / 2,
-    backgroundColor: "black"
-  },
-  userBadgeText: {
-    position: "absolute",
-    top: 2,
-    left: 33,
-    color: "white",
-    backgroundColor: "transparent"
-  },
-  userSwitchBody: {
-    flexDirection: "row",
-    flex: 1
-  },
-  userThumb: {
-    marginHorizontal: 5
-  },
   footer: {
     backgroundColor: "#FCFCFC",
     borderTopWidth: 1,

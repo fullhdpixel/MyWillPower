@@ -8,4 +8,7 @@ export default StyleSheet.create({
   container: {
     backgroundColor: "#fff",
   },
+  content: {
+    textAlign:"center"
+  }
 });

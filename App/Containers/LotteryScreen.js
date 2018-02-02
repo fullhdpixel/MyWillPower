@@ -52,8 +52,8 @@ export default class LotteryScreen extends Component {
               <Icon style={stylesCommon.primary} name="menu" />
             </Button>
           </Left>
-          <Body>
-            <Title># Chance To Party</Title>
+          <Body style={stylesCommon.body}>
+            <Title style={stylesCommon.Title}># Chance To Party</Title>
           </Body>
           <Right/>
         </Header>

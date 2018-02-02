@@ -8,6 +8,9 @@ export default StyleSheet.create({
   primaryBG: {
     backgroundColor: Colors.primary
   },
+  body: {
+    flex: 3
+  },
   text: {
     color: Colors.text
   },
@@ -54,15 +57,15 @@ export default StyleSheet.create({
   font:
     Platform.OS === "ios"
       ? {
-          fontFamily: "System",
-          fontWeight: "normal",
-          fontStyle: "normal"
-        }
+        fontFamily: "System",
+        fontWeight: "normal",
+        fontStyle: "normal"
+      }
       : {
-          fontFamily: "System",
-          fontWeight: "normal",
-          fontStyle: "normal"
-        },
+        fontFamily: "System",
+        fontWeight: "normal",
+        fontStyle: "normal"
+      },
   fontBold: {
     fontFamily: "System",
     fontWeight: "bold",
@@ -73,8 +76,7 @@ export default StyleSheet.create({
   },
   header: {
     backgroundColor: Colors.white,
-    borderBottomWidth: 1,
-    borderBottomColor: "rgba(141,141,141,0.2)"
+    borderBottomWidth: 0
   },
   headerIcon: {
     marginLeft: -10,

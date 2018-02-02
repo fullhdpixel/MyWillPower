@@ -33,3 +33,7 @@ Server:
 
 Maybe:
 - Splashscreen
+
+188.166.102.213
+info@mywillpower.nl
+MyWillpower2018!
