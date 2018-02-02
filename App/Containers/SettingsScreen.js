@@ -70,7 +70,7 @@ export default class SettingsScreen extends Component {
               <Button
                 transparent
                 onPress={() =>
-                  goPage(this.props.navigator, "FeedScreen", true, "fade", true)
+                  goPage(this.props.navigator, "LotteryScreen", true, "fade", true)
                 }
               >
                 <Feather style={stylesCommon.headerIcon} name="chevron-left" />

@@ -5,7 +5,7 @@ import { StyleSheet, View } from "react-native";
 import { Colors, Images } from "../Themes";
 //Styles
 import stylesCommon from "./Styles/StylesCommon";
-// import styles from "./Styles/NotificationStyles";
+import styles from "./Styles/GainsStyles";
 //Icons
 import EvilIcons from "react-native-vector-icons/EvilIcons";
 
@@ -57,13 +57,9 @@ export default class GainsScreen extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Map</Title>
+            <Title>Extra Gains</Title>
           </Body>
-          <Right>
-            <Button transparent onPress={() => goPage(this.props.navigator, "ProfileScreen", true, "fade", true)}>
-              <Thumbnail small source={Images.user8} />
-            </Button>
-          </Right>
+          <Right/>
         </Header>
         <Content padderstyle={styles.content}>
           
@@ -75,6 +71,6 @@ export default class GainsScreen extends Component {
 
 //Validate all props
 import PropTypes from "prop-types";
-MapScreen.propTypes = {
+GainsScreen.propTypes = {
   navigator: PropTypes.navigator
 };

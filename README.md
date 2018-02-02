@@ -30,4 +30,6 @@ Automated tests to ensure high quality:
 Server:
 - Save user data
 - Percentage amongst peers formula
-- 
+
+Maybe:
+- Splashscreen

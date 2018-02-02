@@ -53,16 +53,12 @@ export default class LotteryScreen extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Charts</Title>
+            <Title># Chance To Party</Title>
           </Body>
-          <Right>
-            <Button transparent onPress={() => goProfile()}>
-              <Thumbnail small source={Images.user8} />
-            </Button>
-          </Right>
+          <Right/>
         </Header>
         <Content padder style={styles.content}>
-        
+
         </Content>
       </Container>
     );
@@ -71,6 +67,6 @@ export default class LotteryScreen extends Component {
 
 //Validate all props
 import PropTypes from "prop-types";
-ChartsScreen.propTypes = {
+LotteryScreen.propTypes = {
   navigator: PropTypes.navigator
 };

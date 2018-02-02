@@ -41,7 +41,7 @@ export default class LoginScreen extends Component {
   loginFacebook() {
     goPage(
       rootNavigator,
-      "FeedScreen",
+      "LotteryScreen",
       true,
       "slide-horizontal"
     )

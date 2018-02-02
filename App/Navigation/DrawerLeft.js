@@ -35,7 +35,7 @@ export default class DrawerLeft extends Component {
 
     //Keeps track of activestate
     this.state = {
-      activeScreen: "FeedScreen"
+      activeScreen: "LotteryScreen"
     };
   }
 
@@ -104,102 +104,20 @@ export default class DrawerLeft extends Component {
         <Content>
           {/* Navigation */}
           <List style={[styles.drawerList]}>
+            
             <ListItem
               icon
               onPress={() =>
-                goPage(rootNavigator, "FeedScreen", true, "fade", false, true)
+                goPage(rootNavigator, "LotteryScreen", true, "fade", false, true)
               }
-              style={[styles.drawerItem, this.getActiveStyle("FeedScreen")]}
-            >
-              <Left>
-                <Icon name="ios-paper-outline" style={styles.drawerIcon} />
-              </Left>
-              <Body style={[styles.drawerItemBody]}>
-                <Text note style={styles.drawerText}>
-                  Feed
-                </Text>
-              </Body>
-            </ListItem>
-            <ListItem
-              icon
-              onPress={() =>
-                goPage(rootNavigator, "ChatScreen", true, "fade", false, true)
-              }
-              style={[styles.drawerItem, this.getActiveStyle("ChatScreen")]}
-            >
-              <Left>
-                <Icon name="ios-chatboxes-outline" style={styles.drawerIcon} />
-              </Left>
-              <Body style={styles.drawerItemBody}>
-                <Text note style={styles.drawerText}>
-                  Chat
-                </Text>
-              </Body>
-              <Left>
-                <Badge style={styles.drawerItemBadge}>
-                  <Text>71</Text>
-                </Badge>
-              </Left>
-            </ListItem>
-            <ListItem
-              icon
-              onPress={() =>
-                goPage(
-                  rootNavigator,
-                  "ProfileScreen",
-                  true,
-                  "slide-horizontal",
-                  false,
-                  true
-                )
-              }
-              style={[styles.drawerItem, this.getActiveStyle("ProfileScreen")]}
-            >
-              <Left>
-                <Icon name="ios-contact-outline" style={styles.drawerIcon} />
-              </Left>
-              <Body style={[styles.drawerItemBody]}>
-                <Text note style={styles.drawerText}>
-                  Profile
-                </Text>
-              </Body>
-            </ListItem>
-            <ListItem
-              icon
-              onPress={() =>
-                goPage(
-                  rootNavigator,
-                  "GalleryScreen",
-                  true,
-                  "fade",
-                  false,
-                  true
-                )
-              }
-              style={[styles.drawerItem, this.getActiveStyle("GalleryScreen")]}
-            >
-              <Left>
-                <Icon name="images" style={[styles.drawerIcon]} />
-              </Left>
-              <Body style={styles.drawerItemBody}>
-                <Text note style={styles.drawerText}>
-                  Gallery
-                </Text>
-              </Body>
-            </ListItem>
-            <ListItem
-              icon
-              onPress={() =>
-                goPage(rootNavigator, "MapScreen", true, "fade", false, true)
-              }
-              style={[styles.drawerItem, this.getActiveStyle("MapScreen")]}
+              style={[styles.drawerItem, this.getActiveStyle("LotteryScreen")]}
             >
               <Left>
                 <Icon name="ios-map-outline" style={styles.drawerIcon} />
               </Left>
               <Body style={styles.drawerItemBody}>
                 <Text note style={styles.drawerText}>
-                  Map
+                  Chance To Party
                 </Text>
               </Body>
             </ListItem>
@@ -207,42 +125,16 @@ export default class DrawerLeft extends Component {
               icon
               button
               onPress={() =>
-                goPage(rootNavigator, "LotteryScreen", true, "fade", false, true)
+                goPage(rootNavigator, "GainsScreen", true, "fade", false, true)
               }
-              style={[styles.drawerItem, this.getActiveStyle("LotteryScreen")]}
+              style={[styles.drawerItem, this.getActiveStyle("GainsScreen")]}
             >
               <Left>
                 <Icon name="ios-stats-outline" style={styles.drawerIcon} />
               </Left>
               <Body style={styles.drawerItemBody}>
                 <Text note style={styles.drawerText}>
-                  Number of chance to party
-                </Text>
-              </Body>
-              <Left>
-                <Icon name="arrow-down" style={{ color: "grey" }} />
-              </Left>
-            </ListItem>
-            <ListItem
-              icon
-              onPress={() =>
-                goPage(
-                  rootNavigator,
-                  "ContactsScreen",
-                  true,
-                  "fade",
-                  false,
-                  true
-                )
-              }
-              style={[styles.drawerItem, this.getActiveStyle("ContactsScreen")]}
-            >
-              <Left>
-                <Icon name="ios-contacts-outline" style={styles.drawerIcon} />
-              </Left>
-              <Body style={styles.drawerItemBody}>
-                <Text note style={styles.drawerText}>
-                  Contacts
+                  Extra Gains
                 </Text>
               </Body>
             </ListItem>
