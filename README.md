@@ -1,93 +1,33 @@
-#  MyReactTemplate
+#  MyWillPower
 
-Kill whats on a part: lsof -ti:8081 | xargs kill
+Login screen:
+- Design
+- Login with Facebook (save email address and full name)
 
-- Change ActiveScreen to redux
-- Change statusbar light-content/dark-content on open menu
-- DrawerItem animation
-- DrawerItem active 
-- Settings relateren aan je appr
-- Settings slider color
-- Mapscreen: circles images from people
+User can navigate between screens with tab navigation.
 
-- Fix Feed
-- Individual Post
-- Individual Chatscreen
-- Right Sidebar
-- Charts
-- Map
-- Camera
-- Stats
-- Search ??
+Number of chance to party screen:
+- User can start the button and after 1 hour 1 $wp is earned. The middle number shows the total $wp earned.
 
-- Onboarding 1
-- Onboarding 2
-- Onboarding 3
+Extra gains:
+- Expected increase in Life: sporthours x 10
+- Expected increase in Salery: sporthours x 10
+- Percentage among peers top % (since user uses
+the app)
 
-- Refactor goPage method
+Friend Referral:
+- New signups can fill in exactly who invited them based on Full Name
+- Referrals add 5 to each party
 
-Future:
-- Android Debug
-- Make Feed more interesting, more types of content
-- Make profile more interesting by adding actions
+Documentation: 
+- Comments for source code
 
-## Troubleshooting:
-- cannot find symbol (navigation/config): react-native upgrade
+Automated tests to ensure high quality:
+- Server connectivity
+- Component snapshot
+- Ensure cross platform compatibility for iOS and Android
 
-## todo: longer term
-- Logo Design
-- Form validation
-- Dependent on screen ratios
-
-* Libraries
-- native base
-
-## :arrow_up: How to Setup
-
-**Step 1:** git clone this repo:
-
-**Step 2:** cd to the cloned repo:
-
-**Step 3:** Install the Application with `yarn` or `npm i`
-
-
-## :arrow_forward: How to Run App
-
-1. cd to the repo
-2. Run Build for either OS
-  * for iOS
-    * run `react-native run-ios`
-  * for Android
-    * Run Genymotion
-    * run `react-native run-android`
-
-**Understanding Linting Errors**
-
-The linting rules are from JS Standard and React-Standard.  [Regular JS errors can be found with descriptions here](http://eslint.org/docs/rules/), while [React errors and descriptions can be found here](https://github.com/yannickcr/eslint-plugin-react).
-
-## :closed_lock_with_key: Secrets
-
-This project uses [react-native-config](https://github.com/luggit/react-native-config) to expose config variables to your javascript code in React Native. You can store API keys
-and other sensitive information in a `.env` file:
-
-```
-API_URL=https://myapi.com
-GOOGLE_MAPS_API_KEY=abcdefgh
-```
-
-and access them from React Native like so:
-
-```
-import Secrets from 'react-native-config'
-
-Secrets.API_URL  // 'https://myapi.com'
-Secrets.GOOGLE_MAPS_API_KEY  // 'abcdefgh'
-```
-
-The `.env` file is ignored by git keeping those secrets out of your repo.
-
-### Get started:
-1. Copy .env.example to .env
-2. Add your config variables
-3. Follow instructions at [https://github.com/luggit/react-native-config#setup](https://github.com/luggit/react-native-config#setup)
-4. Done!
+Server:
+- Save user data
+- Percentage amongst peers formula
+- 
