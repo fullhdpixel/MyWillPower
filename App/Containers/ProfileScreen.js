@@ -7,7 +7,7 @@ import { Colors, Images } from "../Themes";
 import stylesCommon from "./Styles/StylesCommon";
 import styles from "./Styles/LotteryStyles";
 //Icons
-import EvilIcons from "react-native-vector-icons/EvilIcons";
+import Feather from "react-native-vector-icons/Feather";
 
 import {
   Thumbnail,
@@ -27,18 +27,18 @@ import {
   Input,
   Row
 } from "native-base";
+
 import {
   enableDrawers,
-  goProfile,
-  toggleDrawer,
+  goPage,
   saveActiveScreen
 } from "app/Navigation/screens";
 
-export default class LotteryScreen extends Component {
+export default class ProfileScreen extends Component {
   constructor(props) {
     super(props);
 
-    enableDrawers(this.props.navigator, true); //Enable drawers
+    enableDrawers(this.props.navigator, false); //Disable drawers
 
     saveActiveScreen("LotteryScreen");
   }
@@ -48,14 +48,19 @@ export default class LotteryScreen extends Component {
       <Container style={styles.container}>
         <Header style={stylesCommon.header}>
           <Left>
-            <Button transparent onPress={() => toggleDrawer()}>
-              <Icon style={stylesCommon.primary} name="menu" />
+            <Button
+              transparent
+              onPress={() =>
+                goPage(this.props.navigator, "LotteryScreen", true, "fade", true)
+              }
+            >
+              <Feather style={stylesCommon.headerIcon} name="chevron-left" />
             </Button>
           </Left>
-          <Body style={stylesCommon.body}>
-            <Title style={stylesCommon.primary}># Chance To Party</Title>
+          <Body>
+            <Title>Profile</Title>
           </Body>
-          <Right/>
+          <Right />
         </Header>
         <Content padder style={styles.content}>
 
@@ -67,6 +72,6 @@ export default class LotteryScreen extends Component {
 
 //Validate all props
 import PropTypes from "prop-types";
-LotteryScreen.propTypes = {
+ProfileScreen.propTypes = {
   navigator: PropTypes.navigator
 };

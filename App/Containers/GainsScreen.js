@@ -54,7 +54,7 @@ export default class GainsScreen extends Component {
             </Button>
           </Left>
           <Body style={stylesCommon.body}>
-            <Title>Extra Gains</Title>
+            <Title style={stylesCommon.primary}>Extra Gains</Title>
           </Body>
           <Right/>
         </Header>

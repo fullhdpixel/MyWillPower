@@ -2,9 +2,9 @@ const type = {
   // base: 'System',
   // bold: 'System',
   // emphasis: 'System-Italic'
-  // base: 'Liberation Sans',
-  // bold: 'Liberation Sans',
-  // emphasis: 'Liberation Sans'
+  base: 'Kaiso-Next-B',
+  bold: 'Kaiso-Next-B',
+  emphasis: 'Kaiso-Next-B'
 }
 
 const size = {

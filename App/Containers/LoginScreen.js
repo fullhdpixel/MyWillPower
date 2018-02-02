@@ -43,33 +43,33 @@ export default class LoginScreen extends Component {
       rootNavigator,
       "LotteryScreen",
       true,
-      "slide-horizontal"
+      "fade"
     )
   }
 
   render() {
     return (
-      <Container style={styles.container}>
+      <Container>
         <Text>MyWillPower</Text>
         {/*<Image source={Images.stock1} style={styles.image} />*/}
         <LinearGradient
-          colors={["#d4c964", "#e4b53d", "#eb9226", "#d03647"]}
+          colors={["#cfc469", "#f19e1f", "#d02c52"]}
           style={styles.linearGradient}
         />
         <Content padder style={stylesCommon.content}>
           <Row style={stylesCommon.imageHolder}>
-            {/*<Image style={styles.logo} source={Images.logo} />*/}
+            <Image style={styles.logo} source={Images.logo} />
           </Row>
-          <Button
-            block
-            style={styles.facebookButton}
-            onPress={this.loginFacebook.bind()}>
-            <EvilIcons name="sc-facebook" style={styles.scicon} />
-            <Text style={[stylesCommon.font]} uppercase={false}>
-              Login with Facebook
-            </Text>
-          </Button>
         </Content>
+        <Button
+          block
+          style={styles.facebookButton}
+          onPress={this.loginFacebook.bind()}>
+          <EvilIcons name="sc-facebook" style={styles.scicon} />
+          <Text style={[stylesCommon.font]} uppercase={false}>
+            Login with Facebook
+          </Text>
+        </Button>
       </Container>
     );
   }

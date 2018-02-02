@@ -1,9 +1,10 @@
 //Import all the individual screen
 import LoginScreen from "app/Containers/LoginScreen";
 
+import ProfileScreen from "app/Containers/ProfileScreen";
 import LotteryScreen from "app/Containers/LotteryScreen";
 import GainsScreen from "app/Containers/GainsScreen";
-import SettingsScreen from "app/Containers/SettingsScreen";
+import AboutScreen from "app/Containers/AboutScreen";
 
 import DrawerLeft from "app/Navigation/DrawerLeft";
 
@@ -17,9 +18,10 @@ export function registerScreens() {
   Navigation.registerComponent("LoginScreen", () => LoginScreen);
 
   //Visible on Drawer
+  Navigation.registerComponent("ProfileScreen", () => ProfileScreen);
   Navigation.registerComponent("LotteryScreen", () => LotteryScreen);
   Navigation.registerComponent("GainsScreen", () => GainsScreen);
-  Navigation.registerComponent("SettingsScreen", () => SettingsScreen);
+  Navigation.registerComponent("AboutScreen", () => AboutScreen);
 }
 
 //Fetch current screen

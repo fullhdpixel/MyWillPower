@@ -1,5 +1,5 @@
 import { Dimensions, StyleSheet } from "react-native";
-import { Colors } from "app/Themes/";
+import { Fonts, Colors } from "app/Themes/";
 
 export default StyleSheet.create({
   drawerImage: {
@@ -31,11 +31,6 @@ export default StyleSheet.create({
   userhandle: {
     color: "#eee"
   },
-  userVerified: {
-    marginLeft: -15,
-    fontSize: 22,
-    color: "#007aff"
-  },
   userStats: {
     backgroundColor: "rgba(0,0,0,0.2)",
     marginTop: -3
@@ -63,14 +58,16 @@ export default StyleSheet.create({
   },
   drawerItemBody: {
     borderBottomWidth: 0,
-    left: 30
   },
   drawerIcon: {
     left: 20
   },
   drawerText: {
-    marginTop: -5,
-    fontSize: 18,
+    fontFamily: 'Kaiso-Next-B',
+    textAlign: "center",
+    width: "100%",
+    fontSize: 24,
+    marginVertical: 10,
     color: "black"
   },
   drawerItemBadge: {

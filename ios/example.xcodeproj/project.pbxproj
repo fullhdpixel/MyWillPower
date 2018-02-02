@@ -63,6 +63,10 @@
 		A0723398A57C4D03BCDEFDC9 /* Liberation Sans Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEBA723CC5A5487BB47C77F9 /* Liberation Sans Italic.ttf */; };
 		92FD7EAF8FEC4A1B88C5DE33 /* Liberation Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D293A86002C4A8489FF64BA /* Liberation Sans Regular.ttf */; };
 		10D694782C054BCD8105E7C4 /* libRCTMGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8C549191394046AE1F2379 /* libRCTMGL.a */; };
+		47A7DE23AF5140CA902B2329 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 480070B4ADA84930B98BFB1C /* libRNGestureHandler.a */; };
+		5AC301B770FB4DE5BDB96298 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64116348E2F94699A5CCB2BD /* libAirMaps.a */; };
+		1779CB8C1A06410890E7E87C /* Kaiso-Next-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38B1BAD99AA6451F8A60A2F4 /* Kaiso-Next-B.ttf */; };
+		654B8CB63EB54C6E8B36DACC /* Moonlight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613D60327DDC432CBC184DCE /* Moonlight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,6 +331,12 @@
 		2D293A86002C4A8489FF64BA /* Liberation Sans Regular.ttf */ = {isa = PBXFileReference; name = "Liberation Sans Regular.ttf"; path = "../App/fonts/Liberation Sans Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D7A6C4128DA0441DB2DCD2F9 /* RCTMGL.xcodeproj */ = {isa = PBXFileReference; name = "RCTMGL.xcodeproj"; path = "../node_modules/@mapbox/react-native-mapbox-gl/ios/RCTMGL.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		2A8C549191394046AE1F2379 /* libRCTMGL.a */ = {isa = PBXFileReference; name = "libRCTMGL.a"; path = "libRCTMGL.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		A53B194E0BBA44D3BD9683A3 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; name = "RNGestureHandler.xcodeproj"; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		480070B4ADA84930B98BFB1C /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		DA6B4BF8B1CD4821B7B87872 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; name = "AirMaps.xcodeproj"; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		64116348E2F94699A5CCB2BD /* libAirMaps.a */ = {isa = PBXFileReference; name = "libAirMaps.a"; path = "libAirMaps.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		38B1BAD99AA6451F8A60A2F4 /* Kaiso-Next-B.ttf */ = {isa = PBXFileReference; name = "Kaiso-Next-B.ttf"; path = "../App/fonts/Kaiso-Next-B.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		613D60327DDC432CBC184DCE /* Moonlight.ttf */ = {isa = PBXFileReference; name = "Moonlight.ttf"; path = "../App/fonts/Moonlight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +369,8 @@
 				09A6DCA7FC254C3D8437AA46 /* libRNImageToBase64.a in Frameworks */,
 				14309B4A85214F8F917F1079 /* libRNPhotoView.a in Frameworks */,
 				10D694782C054BCD8105E7C4 /* libRCTMGL.a in Frameworks */,
+				47A7DE23AF5140CA902B2329 /* libRNGestureHandler.a in Frameworks */,
+				5AC301B770FB4DE5BDB96298 /* libAirMaps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +530,8 @@
 				C0FC1C40E4AB4DFF99D5E1C9 /* RNImageToBase64.xcodeproj */,
 				3CECDBC914884C35A7ED38CB /* RNPhotoView.xcodeproj */,
 				D7A6C4128DA0441DB2DCD2F9 /* RCTMGL.xcodeproj */,
+				A53B194E0BBA44D3BD9683A3 /* RNGestureHandler.xcodeproj */,
+				DA6B4BF8B1CD4821B7B87872 /* AirMaps.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -590,6 +604,8 @@
 				C94FCA55727C40318BB16D49 /* Liberation Sans Bold.ttf */,
 				BEBA723CC5A5487BB47C77F9 /* Liberation Sans Italic.ttf */,
 				2D293A86002C4A8489FF64BA /* Liberation Sans Regular.ttf */,
+				38B1BAD99AA6451F8A60A2F4 /* Kaiso-Next-B.ttf */,
+				613D60327DDC432CBC184DCE /* Moonlight.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -951,6 +967,8 @@
 				83C922D6A8B34029AD95B70E /* Liberation Sans Bold.ttf in Resources */,
 				A0723398A57C4D03BCDEFDC9 /* Liberation Sans Italic.ttf in Resources */,
 				92FD7EAF8FEC4A1B88C5DE33 /* Liberation Sans Regular.ttf in Resources */,
+				1779CB8C1A06410890E7E87C /* Kaiso-Next-B.ttf in Resources */,
+				654B8CB63EB54C6E8B36DACC /* Moonlight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,6 +1057,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1059,6 +1079,8 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

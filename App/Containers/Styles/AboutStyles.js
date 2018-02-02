@@ -11,8 +11,4 @@ export default StyleSheet.create({
     color: "white",
     fontSize: 22
   },
-  copyright: {
-    paddingVertical: 15,
-    alignSelf: "center"
-  }
 });

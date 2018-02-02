@@ -9,6 +9,7 @@ import styles from "app/Navigation/Styles/DrawerLeftStyles";
 import stylesCommon from "app/Containers/Styles/StylesCommon";
 //Icons
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 import {
   Container,
@@ -49,7 +50,7 @@ export default class DrawerLeft extends Component {
         <Image source={Images.stockedit} style={styles.drawerImage} />
 
         <LinearGradient
-          colors={["rgba(0,0,0,0.5)", "rgba(0,0,0,0)"]}
+          colors={["#cfc469", "#f19e1f", "#d02c52"]}
           style={styles.drawerGradient}
         />
 
@@ -66,32 +67,28 @@ export default class DrawerLeft extends Component {
         >
           <CardItem style={styles.userInfoContainer}>
             <Left style={styles.userThumbnailView}>
-              <Thumbnail source={Images.user7} />
+              <Thumbnail source={Images.user1} />
             </Left>
             <Body style={styles.userInfoView}>
               <View style={stylesCommon.horizontal}>
                 <Text note style={[stylesCommon.fontBold, styles.username]}>
-                  Jackie Wilson
+                  Jiulong Zhao
                 </Text>
-                <MaterialIcons
-                  name="verified-user"
-                  style={styles.userVerified}
-                />
               </View>
-              <Text style={styles.userhandle}>@jwilson</Text>
+              <Text style={styles.userhandle}>@JZhao</Text>
             </Body>
           </CardItem>
           {/* User profile stats */}
           <CardItem style={[stylesCommon.shadow, styles.userStats]}>
             <Body style={stylesCommon.horizontal}>
               <Text style={[styles.userStatsText, stylesCommon.fontBold]}>
-                177
+                $ 1
             </Text>
               <Text note style={styles.statsexplanation}>
                 Following
             </Text>
               <Text style={[styles.userStatsText, stylesCommon.fontBold]}>
-                488
+                5%
             </Text>
               <Text note style={styles.statsexplanation}>
                 Followers
@@ -104,16 +101,12 @@ export default class DrawerLeft extends Component {
           <List style={[styles.drawerList]}>
 
             <ListItem
-              icon
               onPress={() => {
                 this.setState({ activeScreen: "LotteryScreen" });
                 goPage(rootNavigator, "LotteryScreen", true, "fade", false, true)
               }}
               style={[styles.drawerItem, this.getActiveStyle("LotteryScreen")]}
             >
-              <Left>
-                <Icon name="ios-map-outline" style={styles.drawerIcon} />
-              </Left>
               <Body style={styles.drawerItemBody}>
                 <Text note style={styles.drawerText}>
                   Chance To Party
@@ -121,7 +114,6 @@ export default class DrawerLeft extends Component {
               </Body>
             </ListItem>
             <ListItem
-              icon
               button
               onPress={() => {
                 this.setState({ activeScreen: "GainsScreen" });
@@ -129,45 +121,27 @@ export default class DrawerLeft extends Component {
               }}
               style={[styles.drawerItem, this.getActiveStyle("GainsScreen")]}
             >
-              <Left>
-                <Icon name="ios-stats-outline" style={styles.drawerIcon} />
-              </Left>
               <Body style={styles.drawerItemBody}>
                 <Text note style={styles.drawerText}>
                   Extra Gains
                 </Text>
               </Body>
             </ListItem>
+            <ListItem
+              
+              onPress={() =>
+                goPage(rootNavigator, "LoginScreen", true, "fade", true, true)
+              }
+              style={[styles.drawerItem, this.getActiveStyle("LotteryScreen")]}
+            >
+              <Body style={styles.drawerItemBody}>
+                <Text note style={styles.drawerText}>
+                  Log Out
+                </Text>
+              </Body>
+            </ListItem>
           </List>
         </Content>
-        <Footer style={styles.footer}>
-          <TouchableOpacity
-            onPress={() =>
-              goPage(rootNavigator, "LoginScreen", true, "fade", true, true)
-            }
-            style={styles.footerAction}
-          >
-            <Icon name="log-out" style={stylesCommon.alignCenter} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() =>
-              goPage(
-                rootNavigator,
-                "SettingsScreen",
-                true,
-                "slide-horizontal",
-                false,
-                true
-              )
-            }
-            style={styles.footerAction}
-          >
-            <Icon
-              name="ios-settings-outline"
-              style={stylesCommon.alignCenter}
-            />
-          </TouchableOpacity>
-        </Footer>
       </Container>
     );
   }

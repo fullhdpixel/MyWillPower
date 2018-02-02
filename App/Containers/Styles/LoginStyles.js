@@ -5,9 +5,6 @@ import { Fonts, Colors } from "../../Themes/";
 const defaultMargin = PixelRatio.getPixelSizeForLayoutSize(5);
 
 export default StyleSheet.create({
-  container: {
-    backgroundColor: "#fff"
-  },
   image: {
     position: "absolute",
     flex: 1,
@@ -28,44 +25,13 @@ export default StyleSheet.create({
   },
   facebookButton: {
     backgroundColor: Colors.facebook,
-    marginTop: defaultMargin,
-    borderRadius: 5
+    position: "absolute",
+    alignSelf: "center",
+    bottom: "20%",
+    paddingLeft: 10
   },
   scicon: {
     color: Colors.white,
     fontSize: 26
   },
-  googleButton: {
-    backgroundColor: Colors.google,
-    marginTop: defaultMargin,
-    borderRadius: 5
-  },
-  loginButton: {
-    marginTop: defaultMargin * 2,
-    marginBottom: defaultMargin,
-    borderRadius: 5
-  },
-  loginText: {
-    color: Colors.primary
-  },
-  createAccount: {
-    paddingLeft: defaultMargin
-  },
-  forgotPassword: {
-    paddingRight: defaultMargin
-  },
-  icon: {
-    color: Colors.white
-  },
-  input: {
-    color: Colors.white
-  },
-  bottomLink: {
-    color: Colors.white
-  },
-  or: {
-    color: Colors.white,
-    marginVertical: defaultMargin,
-    paddingHorizontal: 10
-  }
 });
