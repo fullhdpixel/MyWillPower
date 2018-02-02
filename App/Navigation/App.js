@@ -10,7 +10,7 @@ registerScreens();
 // this will start the app
 Navigation.startSingleScreenApp({
   screen: {
-    screen: "FruitApp.LoginScreen", // First screen to become visible
+    screen: "LoginScreen", // First screen to become visible
     navigatorStyle: {
       navBarHidden: true
     },
@@ -19,7 +19,7 @@ Navigation.startSingleScreenApp({
     // side menu drawers
     left: {
       // drawer from the left
-      screen: "FruitApp.DrawerLeft"
+      screen: "DrawerLeft"
     },
     style: {
       // ( iOS only )

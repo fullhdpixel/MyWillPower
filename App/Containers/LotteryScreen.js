@@ -1,11 +1,11 @@
 //Default libraries
 import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import { View, Dimensions, ImageBackground, Image } from "react-native";
 //Theme Definitions
 import { Colors, Images } from "../Themes";
 //Styles
 import stylesCommon from "./Styles/StylesCommon";
-import styles from "./Styles/NotificationStyles";
+import styles from "./Styles/LotteryStyles";
 //Icons
 import EvilIcons from "react-native-vector-icons/EvilIcons";
 
@@ -29,22 +29,18 @@ import {
 } from "native-base";
 import {
   enableDrawers,
-  goPage,
+  goProfile,
   toggleDrawer,
   saveActiveScreen
 } from "app/Navigation/screens";
 
-import MapView from 'react-native-maps';
-// "AIzaSyC9MCWjXneXxuHTaydkxhYhIEi7Ry3XWrs"
-
-export default class MapScreen extends Component {
+export default class LotteryScreen extends Component {
   constructor(props) {
     super(props);
 
-    //Enable Drawer
-    enableDrawers(this.props.navigator, true)
+    enableDrawers(this.props.navigator, true); //Enable drawers
 
-    saveActiveScreen("MapScreen");
+    saveActiveScreen("LotteryScreen");
   }
 
   render() {
@@ -57,16 +53,16 @@ export default class MapScreen extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Map</Title>
+            <Title>Charts</Title>
           </Body>
           <Right>
-            <Button transparent onPress={() => goPage(this.props.navigator, "ProfileScreen", true, "fade", true)}>
+            <Button transparent onPress={() => goProfile()}>
               <Thumbnail small source={Images.user8} />
             </Button>
           </Right>
         </Header>
-        <Content padderstyle={styles.content}>
-          
+        <Content padder style={styles.content}>
+        
         </Content>
       </Container>
     );
@@ -75,6 +71,6 @@ export default class MapScreen extends Component {
 
 //Validate all props
 import PropTypes from "prop-types";
-MapScreen.propTypes = {
+ChartsScreen.propTypes = {
   navigator: PropTypes.navigator
 };

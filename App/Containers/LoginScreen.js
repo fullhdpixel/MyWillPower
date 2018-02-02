@@ -38,45 +38,38 @@ export default class LoginScreen extends Component {
     enableDrawers(rootNavigator, false); //Disable Drawers
   }
 
+  loginFacebook() {
+    goPage(
+      rootNavigator,
+      "FeedScreen",
+      true,
+      "slide-horizontal"
+    )
+  }
+
   render() {
     return (
       <Container style={styles.container}>
-        <StatusBar barStyle="light-content" />
-        <Image source={Images.stock1} style={styles.image} />
+        <Text>MyWillPower</Text>
+        {/*<Image source={Images.stock1} style={styles.image} />*/}
         <LinearGradient
-          colors={["#606c88", "black"]}
+          colors={["#d4c964", "#e4b53d", "#eb9226", "#d03647"]}
           style={styles.linearGradient}
         />
         <Content padder style={stylesCommon.content}>
           <Row style={stylesCommon.imageHolder}>
-            <Image style={styles.logo} source={Images.logo} />
+            {/*<Image style={styles.logo} source={Images.logo} />*/}
           </Row>
-          <Button block style={styles.facebookButton}>
+          <Button
+            block
+            style={styles.facebookButton}
+            onPress={this.loginFacebook.bind()}>
             <EvilIcons name="sc-facebook" style={styles.scicon} />
             <Text style={[stylesCommon.font]} uppercase={false}>
               Login with Facebook
             </Text>
           </Button>
         </Content>
-        <Footer style={stylesCommon.footer}>
-          <Right>
-            <Button
-              transparent
-              onPress={() =>
-                goPage(
-                  this.props.navigator,
-                  "TacScreen",
-                  true,
-                  "slide-horizontal"
-                )
-              }
-            >
-              <Text style={[styles.bottomLink, stylesCommon.font]}>
-                Terms and conditions
-              </Text>
-            </Button>
-          </Right>
-        </Footer>
       </Container>
     );
   }

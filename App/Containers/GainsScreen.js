@@ -1,11 +1,11 @@
 //Default libraries
 import React, { Component } from "react";
-import { View, Dimensions, ImageBackground, Image } from "react-native";
+import { StyleSheet, View } from "react-native";
 //Theme Definitions
 import { Colors, Images } from "../Themes";
 //Styles
 import stylesCommon from "./Styles/StylesCommon";
-import styles from "./Styles/NotificationStyles";
+// import styles from "./Styles/NotificationStyles";
 //Icons
 import EvilIcons from "react-native-vector-icons/EvilIcons";
 
@@ -29,18 +29,22 @@ import {
 } from "native-base";
 import {
   enableDrawers,
-  goProfile,
+  goPage,
   toggleDrawer,
   saveActiveScreen
 } from "app/Navigation/screens";
 
-export default class ChartsScreen extends Component {
+import MapView from 'react-native-maps';
+// "AIzaSyC9MCWjXneXxuHTaydkxhYhIEi7Ry3XWrs"
+
+export default class GainsScreen extends Component {
   constructor(props) {
     super(props);
 
-    enableDrawers(this.props.navigator, true); //Enable drawers
+    //Enable Drawer
+    enableDrawers(this.props.navigator, true)
 
-    saveActiveScreen("MapsScreen");
+    saveActiveScreen("GainsScreen");
   }
 
   render() {
@@ -53,16 +57,16 @@ export default class ChartsScreen extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Charts</Title>
+            <Title>Map</Title>
           </Body>
           <Right>
-            <Button transparent onPress={() => goProfile()}>
+            <Button transparent onPress={() => goPage(this.props.navigator, "ProfileScreen", true, "fade", true)}>
               <Thumbnail small source={Images.user8} />
             </Button>
           </Right>
         </Header>
-        <Content padder style={styles.content}>
-        
+        <Content padderstyle={styles.content}>
+          
         </Content>
       </Container>
     );
@@ -71,6 +75,6 @@ export default class ChartsScreen extends Component {
 
 //Validate all props
 import PropTypes from "prop-types";
-ChartsScreen.propTypes = {
+MapScreen.propTypes = {
   navigator: PropTypes.navigator
 };

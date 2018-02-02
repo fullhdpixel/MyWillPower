@@ -24,7 +24,7 @@ export default StyleSheet.create({
     width: "100%",
     height: "100%",
     flex: 1,
-    opacity: 0.75
+    // opacity: 0.75
   },
   facebookButton: {
     backgroundColor: Colors.facebook,

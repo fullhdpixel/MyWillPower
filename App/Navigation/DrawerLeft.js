@@ -207,16 +207,16 @@ export default class DrawerLeft extends Component {
               icon
               button
               onPress={() =>
-                goPage(rootNavigator, "ChartsScreen", true, "fade", false, true)
+                goPage(rootNavigator, "LotteryScreen", true, "fade", false, true)
               }
-              style={[styles.drawerItem, this.getActiveStyle("ChartsScreen")]}
+              style={[styles.drawerItem, this.getActiveStyle("LotteryScreen")]}
             >
               <Left>
                 <Icon name="ios-stats-outline" style={styles.drawerIcon} />
               </Left>
               <Body style={styles.drawerItemBody}>
                 <Text note style={styles.drawerText}>
-                  Charts
+                  Number of chance to party
                 </Text>
               </Body>
               <Left>
