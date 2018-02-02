@@ -10,22 +10,14 @@ import styles from "app/Containers/Styles/LoginStyles";
 import EvilIcons from "react-native-vector-icons/EvilIcons";
 //LinearGradient
 import LinearGradient from "react-native-linear-gradient";
-//Components
-import Hr from "react-native-hr-plus";
 //Navigator
 import { goPage, enableDrawers } from "app/Navigation/screens";
 
 import {
   Button,
   Text,
-  Left,
-  Right,
-  Footer,
   Container,
   Content,
-  Form,
-  Item,
-  Input,
   Row
 } from "native-base";
 

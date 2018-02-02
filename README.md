@@ -1,5 +1,8 @@
 #  MyWillPower
 
+react-native-svg-charts
+react-native-facebook-login
+
 Login screen:
 - Design
 - Login with Facebook (save email address and full name)
