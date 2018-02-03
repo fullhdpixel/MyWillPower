@@ -1,9 +1,11 @@
 import "../Config";
-import DebugConfig from "../Config/DebugConfig";
-import React from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
+// import { Text } from "react-native";
 
 import { Navigation } from "react-native-navigation";
+
+import { registerScreens } from "../Navigation/screens"
 
 /**
  * Provides an entry point into our application.  Both index.ios.js and index.android.js
@@ -12,7 +14,9 @@ import { Navigation } from "react-native-navigation";
  * We separate like this to play nice with React Native's hot reloading.
  */
 
-class App extends React.Component {
+registerScreens();
+
+export default class App extends Component {
   constructor(props) {
     super(props);
 
@@ -29,9 +33,7 @@ class App extends React.Component {
   }
 
   render() {
+    // return <Text>SDFSDFSDFSDF</Text>;
     return <View style={{ flex: 1 }}>...</View>;
   }
 }
-
-// allow reactotron overlay for fast design in dev mode
-export default (DebugConfig.useReactotron ? console.tron.overlay(App) : App);
