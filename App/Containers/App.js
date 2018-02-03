@@ -1,11 +1,9 @@
 import "../Config";
 import React, { Component } from "react";
-import { View } from "react-native";
-// import { Text } from "react-native";
+// import { View } from "react-native";
+import { Text } from "react-native";
 
 import { Navigation } from "react-native-navigation";
-
-import { registerScreens } from "../Navigation/screens"
 
 /**
  * Provides an entry point into our application.  Both index.ios.js and index.android.js
@@ -14,7 +12,6 @@ import { registerScreens } from "../Navigation/screens"
  * We separate like this to play nice with React Native's hot reloading.
  */
 
-registerScreens();
 
 export default class App extends Component {
   constructor(props) {
@@ -33,7 +30,7 @@ export default class App extends Component {
   }
 
   render() {
-    // return <Text>SDFSDFSDFSDF</Text>;
-    return <View style={{ flex: 1 }}>...</View>;
+    return <Text>SDFSDdfasdfFSDFSDF</Text>;
+    // return <View style={{ flex: 1 }}><tex</View>;
   }
 }
