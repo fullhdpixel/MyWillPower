@@ -1,7 +1,7 @@
 import "../Config";
-import React, { Component } from "react";
-// import { View } from "react-native";
-import { Text } from "react-native";
+import DebugConfig from "../Config/DebugConfig";
+import React from "react";
+import { View } from "react-native";
 
 import { Navigation } from "react-native-navigation";
 
@@ -12,8 +12,9 @@ import { Navigation } from "react-native-navigation";
  * We separate like this to play nice with React Native's hot reloading.
  */
 
+Navigation.registerComponent("LoginScreen", () => LoginScreen);
 
-export default class App extends Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -30,7 +31,6 @@ export default class App extends Component {
   }
 
   render() {
-    return <Text>SDFSDdfasdfFSDFSDF</Text>;
-    // return <View style={{ flex: 1 }}><tex</View>;
+    return <View style={{ flex: 1 }}>...</View>;
   }
 }
